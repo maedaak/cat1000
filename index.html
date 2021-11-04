@@ -52,6 +52,7 @@
         <dd class="publisher">{{ item.publisher }}</dd>
         <dd class="ncid">{{ item.ncid }}</dd>
         <dd class="edition">{{ item.edtion }}</dd>
+        <dd class="language">{{ item.language }}</dd>
         <dd class="publicationDate">{{ item.publicationDate }}</dd>
         <dd class="note">{{ item.note }}</dd>
       </dl>
@@ -82,7 +83,7 @@
   // List.jsの動作パラメータ設定
   var options = {
     // 対象とするclass を指定
-    valueNames: ['title', 'creator', 'publisher', 'ncid', 'edition', 'note'],
+    valueNames: ['title', 'creator', 'publisher', 'ncid', 'language', 'edition', 'note'],
     // fuzzy search
     plugins: [
       ListFuzzySearch(fuzzyOptions)
