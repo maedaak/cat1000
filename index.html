@@ -70,11 +70,24 @@
 <!-- list.js スクリプトの記述 -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/list.fuzzysearch.js/0.1.0/list.fuzzysearch.min.js"></script>
 <script>
+  // fuzzy serch設定
+  var fuzzyOptions = {
+  searchClass: "fuzzy-search",
+  location: 0,
+  distance: 100,
+  threshold: 0.4,
+    multiSearch: true
+　};
   // List.jsの動作パラメータ設定
   var options = {
     // 対象とするclass を指定
     valueNames: ['title', 'creator', 'publisher', 'ncid', 'edition', 'note'],
+    // fuzzy search
+    plugins: [
+      ListFuzzySearch(fuzzyOptions)
+  　],
     searchDelay: 750,
     // ページネーション指定 pageはページごとの表示件数
     page: 20,
@@ -94,6 +107,5 @@
   });
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </body>
 </html>
