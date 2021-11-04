@@ -30,11 +30,11 @@
       <label for="keyword">文字列をタイプ　<span class="alert">※　半角スペース区切りでAND検索可能</span></label>
       <!-- classをsearchにし、list.jsの検索欄に -->
       <input id="keyword" class="search form-control form-control-lg" placeholder="input any word" size="50" />
-      <select id="lang" onChange="List();">
+      言語: <select id="lang" onChange="List();">
         <option value="any"> --- </option>
-        <option value="jpn">日本語</option>
         <option value="eng">英語</option>
-      </select>
+        <option value="ger">ドイツ語</option>
+        <option value="chi">中国語</option>
       <span id="hits"></span>
     </div>
     <!-- classをpaginationにし、list.jsのページネーションに -->
@@ -125,7 +125,6 @@
       }
     });
     return false;
-    $('#hits').html(listObj.size + "件ヒットしました");
   });
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
