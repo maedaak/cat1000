@@ -73,7 +73,11 @@
     valueNames: ['title', 'creator', 'publisher', 'edition', 'note'],
     // ページネーション指定 pageはページごとの表示件数
     page: 20,
-    pagination: true
+    pagination: {
+      paginationClass:'pagination',
+      innerWindow: 8,
+      outerWindow: 2,
+    }
   };
   // list.jsの対象とする<div>のidを指定
   var listObj = new List('listdata', options);
