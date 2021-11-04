@@ -112,21 +112,21 @@
   });
   // 言語フィルター
   $('#lang').change(function() {
-  lang = $('option:selected').val();
-  listObj.filter(function(item) {
-    if (lang === 'any') {
-      return true;
-    }
-    else if (item.values().language.indexOf(lang) > -1) {
-      return true;
-    }
-    else {
-      return false;
-    }
+    lang = $('option:selected').val();
+    listObj.filter(function(item) {
+      if (lang === 'any') {
+        return true;
+      }
+      else if (item.values().language.indexOf(lang) > -1) {
+        return true;
+      }
+      else {
+        return false;
+      }
+    });
+    return false;
+    $("#hits").html(userList.size + "件ヒットしました");
   });
-  return false;
-  $("#hits").html(userList.size + "件ヒットしました");
-}
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
 </body>
