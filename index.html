@@ -28,7 +28,7 @@
   <!-- list.jsのブロック idはlist.jsの呼び出しに使う　HTML末尾のスクリプトで指定している -->
   <div id="listdata">
     <div class="form-group">
-      <label for="keyword">文字列をタイプ　<span class="alert">※　半角スペース区切りでAND検索可能</span>
+      <label for="keyword">文字列をタイプ　<span class="alert">※　半角スペース区切りでAND検索可能</span></label>
       <!-- classをsearchにし、list.jsの検索欄に -->
       <input id="keyword" class="search form-control form-control-lg" placeholder="input any word" size="50" />
       <span id="hits"></span>
@@ -73,6 +73,7 @@
 <script>
   // List.jsの動作パラメータ設定
   var options = {
+    // 対象とするclass を指定
     valueNames: ['title', 'creator', 'publisher', 'ncid', 'edition', 'note'],
     searchDelay: 750,
     // ページネーション指定 pageはページごとの表示件数
