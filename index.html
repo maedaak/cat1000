@@ -35,6 +35,7 @@
         <option value="eng">英語</option>
         <option value="ger">ドイツ語</option>
         <option value="chi">中国語</option>
+      </select>
       <span id="hits"></span>
     </div>
     <!-- classをpaginationにし、list.jsのページネーションに -->
@@ -110,6 +111,22 @@
     listObj.search(searchString);
     $('#hits').html(listObj.matchingItems.length + "件ヒットしました");
   });
+  // 言語フィルター
+  $('#lang').change(function() {
+    lang = $('option:selected').val();
+    listObj.filter(function(item) {
+      if (lang === 'any') {
+        return true;
+      }
+      else if (item.values().language.indexOf(lang) > -1) {
+        return true;
+      }
+      else {
+        return false;
+      }
+    });
+    return false;
+  }););
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
 </body>
