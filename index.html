@@ -26,18 +26,22 @@
   </p>
   <!-- list.jsのブロック idはlist.jsの呼び出しに使う　HTML末尾のスクリプトで指定している -->
   <div id="listdata">
-    <div class="form-group">
+    <div class="form-group row">
       <label for="keyword">文字列をタイプ　<span class="alert">※　半角スペース区切りでAND検索可能</span></label>
+      <div class="col-md-8">
       <!-- classをsearchにし、list.jsの検索欄に -->
-      <input id="keyword" class="search form-control form-control-lg" placeholder="input any word" size="50" />
+        <input id="keyword" class="search form-control form-control-lg" placeholder="input any word" size="50" />
+      </div>
+      <div class="col-md-4">
       <select id="lang" class="form-control form-control-lg onChange="List();">
         <option value="any"> --- </option>
         <option value="eng">英語</option>
         <option value="ger">ドイツ語</option>
         <option value="chi">中国語</option>
       </select>
-      <span id="hits"></span>
+      </div>
     </div>
+    <span id="hits"></span>
     <!-- classをpaginationにし、list.jsのページネーションに -->
     <div class="form-group">
       <ul class="pagination list-inline"></ul>
