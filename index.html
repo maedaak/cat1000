@@ -12,10 +12,10 @@
   <! -- pace を使ったローディングバーの表示 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/black/pace-theme-loading-bar.min.css" integrity="sha512-p/7j92gn7aB9tDnfPF70pYqrHofcWtimt2eA+yEe2+h74ur0vHO79yjrpF0s1K9d02R6gkpBmLdZwPaCiazPQA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js" integrity="sha512-2cbsQGdowNDPcKuoBd2bCcsJky87Mv0LEtD/nunJUgk6MOYTgVMGihS/xCEghNf04DPhNiJ4DZw5BxDd1uyOdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <title>lits.jsとjekyllによる静的な図書館関係本リストのテスト</title>
+  <title>Lits.jsとjekyllによる静的な書誌検索「１万件」サンプルページ</title>
 </head>
 <body class="container">
-  <h1>list.jsとjekyllによる静的な図書館関係本リスト「１万件」チャレンジ</h1>
+  <h1>List.jsとjekyllによる書誌検索「１万件」サンプルページ</h1>
   <p>
     GitHub Pagesはjekyllが使えるので、<a href="https://github.com/maedaak/cat10000/tree/main/_data" target="_blank">TSVの図書リスト１万件</a>を読み込ませてみた<br>
     <br>
@@ -30,7 +30,7 @@
       <label for="keyword">文字列をタイプ　<span class="alert">※　半角スペース区切りでAND検索可能</span></label>
       <!-- classをsearchにし、list.jsの検索欄に -->
       <input id="keyword" class="search form-control form-control-lg" placeholder="input any word" size="50" />
-      言語: <select id="lang" onChange="List();">
+      <select id="lang" class="form-control form-control-lg onChange="List();">
         <option value="any"> --- </option>
         <option value="eng">英語</option>
         <option value="ger">ドイツ語</option>
@@ -125,7 +125,7 @@
         return false;
       }
     });
-    return false;
+    $('#hits').html(listObj.matchingItems.length + "件ヒットしました");
   });
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
