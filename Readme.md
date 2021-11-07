@@ -1,4 +1,4 @@
-# list.jsとjekyllによる書誌「１万件」検索サンプルページ
+# ist.jsとjekyllによる書誌「１万件」検索サンプルページ
 
 ## 概要
 GitHub PagesでList.jsとJekyllを使うにあたり、書誌1万件の検索が可能なサンプルページを作成した。
