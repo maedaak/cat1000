@@ -12,6 +12,9 @@ NACSIS-CATの総合目録データベースの書誌情報(CC-BY)を使用して
 以下の資料に記載している。
 - 発表資料 https://www.slideshare.net/genroku/web-listjs-jekyll-github-pages
 
+## HTMLテンプレート
+- Jekeyllを使用している。
+
 ## 機能の作りこみ
 現在はList.jsの基本的な機能をもとに、次の作りこみを行っている。
 - 大量データ対応
@@ -26,6 +29,7 @@ NACSIS-CATの総合目録データベースの書誌情報(CC-BY)を使用して
 ## 利点
 - HTML内の検索のため、何をしているかわかりやすい
 - 既存のHTMLに検索機能をつけることも容易である
+- Jekyllであれば、YAML/CSVなどのデータをもとに、HTMLを自由度高く生成できる
 - List.jsを使用するため、ユーザ独自コードが少なくて済んでいる
 - AND検索をサポートしている
 
