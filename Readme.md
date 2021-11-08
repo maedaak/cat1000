@@ -50,6 +50,8 @@ Windowsのローカル環境のJekyllで試してから、GitHub Pagesに適用�
 - Wiki ( https://github.com/maedaak/cat10000/wiki )を参照
 
 ## 関連サイト
-- https://maedaak.github.io/sheetdb/
-- https://maedaak.github.io/listjs-tsv/
+- sheetdb.jsとExcelを使った簡易書誌検索サンプルページ
+ https://maedaak.github.io/sheetdb/
+- Lits.jsとTSVによる「１万件」書誌検索サンプルページ<
+ https://maedaak.github.io/listjs-tsv/
 
