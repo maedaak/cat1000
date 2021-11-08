@@ -48,6 +48,7 @@ Windowsのローカル環境のJekyllで試してから、GitHub Pagesに適用�
 - 改行コードをLFに変更
 ### List.jsのレコード区切り判定
 - List.jsではliだけではなく、hrなどの要素もレコード区切りとみなすため、レコード中に使うことができない。
+- ただし、hr要素については、p要素の外枠指定で大体することで、この問題を回避することはできる。
 
 ## 現在の開発状況
 - Wiki ( https://github.com/maedaak/cat10000/wiki )を参照
