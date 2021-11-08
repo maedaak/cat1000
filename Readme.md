@@ -1,7 +1,7 @@
 # List.jsのHTML内検索機能を使った書誌「１万件」検索サンプルページ
 
 ## サンプルサイトURL
-https://maedaak.github.io/cat1000/
+https://maedaak.github.io/cat10000/
 
 ## 概要
 List.jsのHTML内検索機能を使った書誌「１万件」検索サンプルページである。<br>
