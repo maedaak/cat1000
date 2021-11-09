@@ -15,11 +15,23 @@ NACSIS-CATの総合目録データベースの書誌情報(CC-BY)を使用して
 以下の資料に記載している。
 - 発表資料 https://www.slideshare.net/genroku/web-listjs-jekyll-github-pages
 
+## 入力ファイルの読み取り
+- JekeyllによりあらかじめHTML中に埋め込み
+- TSVを使ったが、YAMLでもよい
+
 ## HTMLテンプレート
-- Jekeyllを使用している。
+- Jekeyllを使用している
 - Mustache記法となる
 
-## 機能の作りこみ
+## インターフェイス
+- インクリメンタルサーチ
+- キーワード半角スペース区切りでAND検索
+- プルダウンメニューによる絞り込み（文字列中間一致で設定）
+- ファジー検索(Diff Match and Patchベース)
+- ヒット件数表示
+- ページネーション
+
+## 開発内容
 現在はList.jsの基本的な機能をもとに、次の作りこみを行っている。
 - 大量データ対応
     - HTML読み込み時のローディングバーを追加
