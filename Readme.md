@@ -4,7 +4,7 @@
 https://maedaak.github.io/cat10000/
 
 ## 概要
-List.jsのHTML内検索機能を使った書誌「１万件」検索サンプルページである。<br>
+List.js ( https://listjs.com/ )のHTML内検索機能を使った書誌「１万件」検索サンプルページである。<br>
 書誌リストTSVをHTML中に埋め込むにあたり、GitHub Pagesの静的サイトジェネレーターJekyllを使用した。
 
 ## サンプルデータ
